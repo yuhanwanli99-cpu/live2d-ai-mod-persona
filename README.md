@@ -1,5 +1,9 @@
 # live2d-ai-mod-persona
 
+> **Legacy（2026-11-19，0.7.0 收口）**：本 Mod 自 0.7.0 起**不再随发布包分发、不再挂回宿主**
+> （0.7.0 打包清单 = external-input / local-tts / local-engine / a2a / cosyvoice3-tts / desk-pet）。
+> 仓库保留历史与自建可能；维护级别 = legacy：只做安全与可编译修复，不承诺兼容演进。
+
 酒馆角色卡 Mod（稳定 id persona；工厂 `FACTORY`（`PersonaFactory`））的实现 crate。本仓库是 2026-10-19 从主仓 `/home/skystar/Live2D-Ai` 拆出来的独立本地仓库：**仓库根 = crate 根**（`Cargo.toml` 在根），许可证 AGPL-3.0-only（见 `LICENSE`）。
 
 依赖方向只有「Mod → 主仓」：`live2d-ai-mod-system` 走 path 指向同父目录的 `../Live2D-Ai/crates/...`；没有指向旧第二仓 `../Live2D-Ai-mods` 的 path，也没有 Mod→Mod 的 path 依赖。本仓是独立 workspace（`Cargo.toml` 末尾空的 `[workspace]`），可以 `cd` 进来单独跑门禁。
